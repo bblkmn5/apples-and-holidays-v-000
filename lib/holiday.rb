@@ -83,7 +83,6 @@ def all_holidays_with_bbq(holiday_hash)
   #searches for provided string to see if supplies array includes it, and adds holiday name to #empty array
     array << holiday if supplies.include? "BBQ"
     end
-    array.compact
+    array
   end
-  array
 end
