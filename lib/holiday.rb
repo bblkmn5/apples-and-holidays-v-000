@@ -60,9 +60,14 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each do |season, holidays|
+    #print out each season and capitalize as given by readout
     puts "#{season.capitalize}:"
     holidays.each do |holiday, supplies|
-      puts "  #{holiday.to_s.split("_").map {|holiday_value| holiday_value.capitalize}.join(" ")}: #{supplies.join(", ")}"
+    #print out 2 spaces before each holiday, splits holidays that are combined by underscore
+    #capitalize each holiday word after split and joins with a space
+      puts "  #{holiday.to_s.split("_").map {|holiday_value| holiday_value.capitalize}.join(" ")}:
+    #prints out each supply per holiday, and joins by comma and space 
+     #{supplies.join(", ")}"
     end
   end
 end
