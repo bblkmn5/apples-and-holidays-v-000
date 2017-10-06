@@ -27,8 +27,8 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   # Christmas AND the New Year's arrays
   holiday_hash.each do |attribute, data|
     if attribute == :winter
-      :winter[:christmas][:supply] = "Lights", "Wreath"
-      :winter[:new_years][:supply] = "Party Hats"
+      :winter[:christmas] = :supply
+      :winter[:new_years] = :supply
     end
   end
 end
