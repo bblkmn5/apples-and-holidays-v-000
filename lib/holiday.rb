@@ -81,7 +81,7 @@ def all_holidays_with_bbq(holiday_hash)
   #iterate through each season, to each holiday, to each supplies array
   holiday_hash.map do |season, holidays|
     holidays.map do |holiday, supplies|
-  #searches for provided string to see if supplies array includes it, and adds holiday name to empty array
+  #searches for provided string to see if supplies array includes it, and adds holiday name to #empty array
     array << holiday if supplies.include? "BBQ"
     end
     array.compact
