@@ -85,6 +85,6 @@ def all_holidays_with_bbq(holiday_hash)
     array << holiday if supplies.include? "BBQ"
     end
   #compacts the array to
-    array 
+    array
   end
 end
