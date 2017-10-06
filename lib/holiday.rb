@@ -87,4 +87,5 @@ def all_holidays_with_bbq(holiday_hash)
   #compacts the array to
     array.compact
   end
+  array
 end
