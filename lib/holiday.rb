@@ -75,7 +75,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  
+
   #empty array to hold holiday names within parameter
   array = []
   #iterate through each season, to each holiday, to each supplies array
@@ -84,7 +84,7 @@ def all_holidays_with_bbq(holiday_hash)
   #searches for provided string to see if supplies array includes it, and adds holiday name to empty array
     array << holiday if supplies.include? "BBQ"
     end
-  #compacts the array to 
+  #compacts the array to
   end
   array
 end
