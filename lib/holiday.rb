@@ -66,8 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
     #print out 2 spaces before each holiday, splits holidays that are combined by underscore
     #capitalize each holiday word after split and joins with a space
     #prints out each supply per holiday, and joins by comma and space
-      puts "  #{holiday.to_s.split("_").map {|holiday_value| holiday_value.capitalize}.join(" ")}:
-     #{supplies.join(", ")}"
+      puts "  #{holiday.to_s.split("_").map {|holiday_value| holiday_value.capitalize}.join(" ")}: #{supplies.join(", ")}"
     end
   end
 end
